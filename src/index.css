@@ -2,9 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&family=Poppins&family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+@layer components {
+  .fontPrimary {
+    font-family: "Patua One", cursive;
+  }
+
+  .fontSecondary {
+    font-family: "Source Sans Pro", sans-serif;
+  }
+
+  .fontTertiary {
+    font-family: "Poppins", sans-serif;
+  }
+}
+
 @layer base {
   .bgHero {
     @apply bg-gradient-to-b from-[#FFF4F2]/40 to-[#FFF0EE];
+  }
+
+  .bgPrimary {
+    @apply bg-[#FE5E44]/20;
+  }
+
+  .bgSecondary {
+    @apply bg-[#FE5E44]/5;
   }
 
   .buttonPrimary {
