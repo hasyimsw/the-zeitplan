@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .bgHero {
+    @apply bg-gradient-to-b from-[#FFF4F2]/40 to-[#FFF0EE];
+  }
+
+  .buttonPrimary {
+    @apply py-2 px-6 bg-[#FE5E44] text-white rounded-md font-semibold border-2 border-[#FE5E44];
+  }
+
+  .buttonSecondary {
+    @apply bg-[#FE5E44]/10 text-[#FE5E44] py-2 px-6 rounded-md font-semibold border-2 border-[#FE5E44]/10;
+  }
+}
