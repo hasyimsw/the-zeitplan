@@ -1,5 +1,6 @@
 import React from "react";
 import Applications from "./components/Applications";
+import Featured from "./components/Featured";
 import Hero from "./components/Hero";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <Hero />
       <Applications />
+      <Featured />
     </>
   );
 }
