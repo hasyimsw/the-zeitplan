@@ -1,5 +1,6 @@
 import React from "react";
 import Applications from "./components/Applications";
+import Download from "./components/Download";
 import Featured from "./components/Featured";
 import Hero from "./components/Hero";
 import Price from "./components/Price";
@@ -13,6 +14,7 @@ function App() {
       <Featured />
       <Price />
       <Testimoni />
+      <Download />
     </>
   );
 }
