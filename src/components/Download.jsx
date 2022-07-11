@@ -1,6 +1,7 @@
 import React from 'react'
 import appStore from '../assets/app-store.png'
 import googlePlay from '../assets/google-play.png'
+import Footer from './Footer'
 
 const Download = () => {
   return (
@@ -11,6 +12,7 @@ const Download = () => {
             <button><img src={appStore} alt="/" /></button>
             <button><img src={googlePlay} alt="/" /></button>
         </div>
+        <Footer />
     </div>
   )
 }
