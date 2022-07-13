@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 import logo from '../assets/logo.png'
 import instagram from '../assets/instagram.svg'
 import facebook from '../assets/facebook.svg'
@@ -6,7 +7,7 @@ import twitter from '../assets/twitter.svg'
 
 const Footer = () => {
   return (
-    <div className='max-w-[1168px] px-4 mx-auto pt-20'>
+    <div className='max-w-[1168px] px-4 mx-auto pt-40'>
         <div className='block lg:flex'>
             <div className='lg:w-5/12'>
                 <img className='w-9 h-9' src={logo} alt="/" />
@@ -18,11 +19,11 @@ const Footer = () => {
                 <div className='w-6/12 lg:ml-2'>
                     <h1 className='fontPrimary text-lg'>Sitemap</h1>
                     <ul className='fontSecondary text-base text-slate-500 pt-4 space-y-3'>
-                        <li>Beranda</li>
-                        <li>Fitur-fitur</li>
-                        <li>Harga</li>
-                        <li>Testimoni</li>
-                        <li>Download</li>
+                        <li className='cursor-pointer hover:text-[#FE5E44]'><Link to='home' smooth={true} duration={500}>Home</Link></li>
+                        <li className='cursor-pointer hover:text-[#FE5E44]'><Link to='featured' smooth={true} duration={500}>Fitur-fitur</Link></li>
+                        <li className='cursor-pointer hover:text-[#FE5E44]'><Link to='price' smooth={true} duration={500}>Harga</Link></li>
+                        <li className='cursor-pointer hover:text-[#FE5E44]'><Link to='testimoni' smooth={true} duration={500}>Testioni</Link></li>
+                        <li className='cursor-pointer hover:text-[#FE5E44]'><Link to='download' smooth={true} duration={500}>Download</Link></li>
                     </ul>
                 </div>
                 <div className='w-6/12'>

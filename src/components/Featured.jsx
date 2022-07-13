@@ -7,7 +7,7 @@ import bell from '../assets/bell.png'
 
 const Featured = () => {
   return (
-    <div className='max-w-[1168px] px-4 mx-auto py-28'>
+    <div name="featured" className='max-w-[1168px] px-4 mx-auto py-28'>
         <div className='grid md:grid-cols-2 gap-8 items-center'>
             <div>
                 <img className='w-[540deg] h-[679deg]' src={featuredImage} alt="/" />
